@@ -1,0 +1,33 @@
+@import "./theming/themes.scss";
+
+
+.appbody{
+    overflow: auto;
+    padding: 0 1rem;
+}
+.appbody{
+    background-color: var(--background-color);
+    color:var(--text-color);
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+.themeChangers{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    button{
+        width:100%;
+        border: 1px solid var(--text-color);
+        padding: 1rem 0;
+        margin:0 1rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        background-color: var(--primary-color);
+        color: var(--primary-text-color);
+    }
+}
+
+
+
+html, body, #root, #root>div.appbody {
+    height: 100%;
+  }
